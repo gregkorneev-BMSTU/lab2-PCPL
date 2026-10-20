@@ -10,20 +10,16 @@ https://github.com/ugapanyuk/BKIT_2022/wiki/lab_python_fp
 ## Структура
 
 ```text
-lab_python_fp_project/
-├── .gitignore
+lab2-PCPL/
 ├── README.md
-├── requirements.txt
-└── lab_python_fp/
-    ├── __init__.py
-    ├── field.py
-    ├── gen_random.py
-    ├── unique.py
-    ├── sort.py
-    ├── print_result.py
-    ├── cm_timer.py
-    ├── process_data.py
-    └── data_light.json
+├── field.py
+├── gen_random.py
+├── unique.py
+├── sort.py
+├── print_result.py
+├── cm_timer.py
+├── process_data.py
+└── data_light.json
 ```
 
 ## Запуск отдельных задач
@@ -31,18 +27,18 @@ lab_python_fp_project/
 Из корня проекта:
 
 ```bash
-python lab_python_fp/field.py
-python lab_python_fp/gen_random.py
-python lab_python_fp/unique.py
-python lab_python_fp/sort.py
-python lab_python_fp/print_result.py
-python lab_python_fp/cm_timer.py
+python field.py
+python gen_random.py
+python unique.py
+python sort.py
+python print_result.py
+python cm_timer.py
 ```
 
 ## Запуск итоговой задачи
 
 ```bash
-python lab_python_fp/process_data.py lab_python_fp/data_light.json
+python process_data.py data_light.json
 ```
 
 `process_data.py` получает путь к JSON-файлу первым аргументом командной строки.

@@ -4,6 +4,7 @@
 class Unique:
     def __init__(self, items, **kwargs):
         self.items = iter(items)
+        # kwargs позволяет передать настройку как ignore_case=True.
         self.ignore_case = kwargs.get('ignore_case', False)
         self.used = set()
 
@@ -12,6 +13,7 @@ class Unique:
             item = next(self.items)
 
             if self.ignore_case and isinstance(item, str):
+                # Сравниваем строки без учета регистра, возвращая исходную строку.
                 key = item.lower()
             else:
                 key = item

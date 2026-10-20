@@ -4,6 +4,7 @@ data = [4, -30, 100, -100, 123, 1, 0, -1, -4]
 
 
 if __name__ == '__main__':
+    # abs задаёт ключ сортировки по модулю, reverse=True меняет порядок на убывающий.
     result = sorted(data, key=abs, reverse=True)
     print(result)
 

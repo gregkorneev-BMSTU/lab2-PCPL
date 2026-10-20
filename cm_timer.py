@@ -6,6 +6,7 @@ from contextlib import contextmanager
 
 class cm_timer_1:
     def __enter__(self):
+        # Запоминаем время перед выполнением блока with.
         self.start_time = time.time()
         return self
 
@@ -16,6 +17,7 @@ class cm_timer_1:
 
 @contextmanager
 def cm_timer_2():
+    # Вариант таймера через contextlib.
     start_time = time.time()
     try:
         yield

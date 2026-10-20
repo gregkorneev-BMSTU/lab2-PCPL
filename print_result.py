@@ -5,6 +5,7 @@ def print_result(func):
     def wrapper(*args, **kwargs):
         result = func(*args, **kwargs)
 
+        # Для списков и словарей каждый элемент печатается отдельной строкой.
         print(func.__name__)
 
         if isinstance(result, list):
