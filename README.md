@@ -27,18 +27,18 @@ lab2-PCPL/
 Из корня проекта:
 
 ```bash
-python field.py
-python gen_random.py
-python unique.py
-python sort.py
-python print_result.py
-python cm_timer.py
+python3 field.py
+python3 gen_random.py
+python3 unique.py
+python3 sort.py
+python3 print_result.py
+python3 cm_timer.py
 ```
 
 ## Запуск итоговой задачи
 
 ```bash
-python process_data.py data_light.json
+python3 process_data.py data_light.json
 ```
 
 `process_data.py` получает путь к JSON-файлу первым аргументом командной строки.
